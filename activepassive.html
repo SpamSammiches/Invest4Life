@@ -4,17 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/bootstrap.bundle.js" defer></script>
     <title>Active vs. Passive Investing</title>
   </head>
   <body>
-    <nav id="topnav">
-      <a href="index.html">Home</a>
-      <a href="retirement.html">Retirement Accounts</a>
-      <a href="activepassive.html">Active vs Passive</a>
-      <a href="compounding.html">Compounding</a>
-      <a href="portfolios.html">Portfolios</a>
-      <a href="calculator.html">Calculator</a>
+    <nav class="navbar navbar-expand-xl bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logo.png"
+            alt="Invest4Life logo"
+            width="75"
+            height="75"
+            class="d-inline-block align-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="retirement.html">Retirement Accounts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="compounding.html">Compound Growth</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="activepassive.html"
+                >Active vs Passive Investing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="factors.html">Factor Investing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolios.html">Portfoloios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="calculator.html">Calculators</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <div>
       <h1>What is Passive and Active Investing?</h1>
@@ -65,5 +112,6 @@
         There are some cases where an actively managed fund may make sense such as in emerging markets where data is more difficult to obtain. There is strategy that blends passive and active investing called <a href="factors.html">Factor Investing</a>,
       </p>
     </div>
+    <footer>&copy; Copyright 2022 by Van Ha</footer>
   </body>
 </html>

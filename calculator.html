@@ -11,21 +11,66 @@
     <title>Retirement Calculators</title>
   </head>
   <body>
-    <nav id="topnav">
-      <a href="index.html">Home</a>
-      <a href="retirement.html">Retirement Accounts</a>
-      <a href="activepassive.html">Active vs Passive</a>
-      <a href="compounding.html">Compounding</a>
-      <a href="portfolios.html">Portfolios</a>
-      <a href="calculator.html">Calculator</a>
+    <nav class="navbar navbar-expand-xl bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logo.png"
+            alt="Invest4Life logo"
+            width="75"
+            height="75"
+            class="d-inline-block align-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="retirement.html">Retirement Accounts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="compounding.html">Compound Growth</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="activepassive.html"
+                >Active vs Passive Investing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="factors.html">Factor Investing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolios.html">Portfoloios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="calculator.html">Calculators</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <div id="div-form" class="carousel slide" data-bs-ride="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <form id="fv-form">
             <fieldset>
-              <legend>Find Ending Balance</legend>
-              <label for="fv-rate">Interest Rate (%)</label>
+              <legend>Balance At Retirement?</legend>
+              <label for="fv-rate">Rate of Return (%)</label>
               <input type="number" name="rate" id="fv-rate" required />
               <br />
               <label for="fv-years">Years to Retirement</label>
@@ -48,14 +93,14 @@
                 name="fv"
                 id="fv-fv"
                 readonly="true"
-                placeholder="No entry required"
+                placeholder="Not required"
               />
               <br />
               <br />
               <button type="submit" onclick="return calcFV();">Submit</button>
               <button
                 type="reset"
-                onclick="window.location.reload(); return false;"
+                onclick="resetForm('fv-form', 'fv-fv'); return false;"
               >
                 Reset
               </button>
@@ -63,10 +108,42 @@
           </form>
         </div>
         <div class="carousel-item">
-          <h1>2</h1>
-        </div>
-        <div class="carousel-item">
-          <h1>3</h1>
+          <form id="co-form">
+            <fieldset>
+              <legend>How Much to Contribute Annually?</legend>
+              <label for="fv-rate">Rate of Return (%)</label>
+              <input type="number" name="rate" id="co-rate" required />
+              <br />
+              <label for="fv-years">Years to Retirement</label>
+              <input type="number" name="years" id="co-years" required />
+              <br />
+              <label for="fv-pv">Beginning Balance</label>
+              <input type="number" name="pv" id="co-pv" required />
+              <br />
+              <label for="fv-contribution"> Annual Contribution</label>
+              <input
+                type="number"
+                name="contribution"
+                id="co-contribution"
+                readonly="true"
+                placeholder="Not required"
+              />
+              <br />
+              <label for="contri-fv">Ending Balance</label>
+              <input type="number" name="fv" id="co-fv" required />
+              <br />
+              <br />
+              <button type="submit" onclick="return calcContri();">
+                Submit
+              </button>
+              <button
+                type="reset"
+                onclick="resetForm('co-form', 'co-contribution'); return false;"
+              >
+                Reset
+              </button>
+            </fieldset>
+          </form>
         </div>
       </div>
       <button
@@ -89,34 +166,6 @@
       </button>
     </div>
 
-    <!-- <div id="div-form">
-      <form id="calc-form">
-        <fieldset>
-          <legend>Value At Retirement</legend>
-          <label for="rate">Interest Rate (%)</label>
-          <input type="number" name="rate" id="rate" required />
-          <br />
-          <label for="years">Years to Retirement</label>
-          <input type="number" name="years" id="years" required />
-          <br />
-          <label for="pv">Beginning Balance</label>
-          <input type="number" name="pv" id="pv" required />
-          <br />
-          <label for="contribution"> Annual Contribution</label>
-          <input type="number" name="contribution" id="contribution" required />
-          <br />
-          <button type="submit" onclick="return calcFV();">Submit</button>
-          <button
-            type="reset"
-            onclick="window.location.reload(); return false;"
-          >
-            Reset
-          </button>
-        </fieldset>
-      </form>
-    </div> -->
-    <div>
-      <p id="form-result"></p>
-    </div>
+    <footer>&copy; Copyright 2022 by Van Ha</footer>
   </body>
 </html>

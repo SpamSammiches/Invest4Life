@@ -4,20 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/bootstrap.bundle.js" defer></script>
     <title>Retirement Accounts: 401(k) and IRA</title>
   </head>
   <body>
-    <nav id="topnav">
-        <a href="index.html">Home</a>
-        <a href="retirement.html">Retirement Accounts</a>
-        <a href="activepassive.html">Active vs Passive</a>
-        <a href="compounding.html">Compounding</a>
-        <a href="portfolios.html">Portfolios</a>
-        <a href="calculator.html">Calculator</a>
+    
+      <nav class="navbar navbar-expand-xl bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/logo.png"
+              alt="Invest4Life logo"
+              width="75"
+              height="75"
+              class="d-inline-block align-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="retirement.html"
+                  >Retirement Accounts</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="compounding.html">Compound Growth</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="activepassive.html"
+                  >Active vs Passive Investing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="factors.html">Factor Investing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolios.html">Portfoloios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calculator.html">Calculators</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     
-    <div class="retirement">
+    
+    <div class="b-rad">
         <figure class="float-right" id="piggybank">
             <img src="images/piggybank.jpeg" alt="piggy bank" />
             <figcaption>
@@ -38,7 +89,7 @@
             The two main retirement accounts people will have access to are the 401(k) and the Individual Retirement Account or IRA for short. These are other retirement accounts like the 403(b) but those are used by fewer people so we will no go into those.
         </p>
     </div>
-    <div id="401k" class="retirement">
+    <div id="401k" class="b-rad">
       <h1>401(k)</h1>
       <h3>What is a 401(k)?</h3>
       <p>
@@ -67,7 +118,7 @@
         holders have an average balance of $121,700.
       </p></p>
     </div>
-    <div id="ira" class="retirement">
+    <div id="ira" class="b-rad">
       <h1>IRA</h1>
       <h3>What is an IRA?</h3>
       <p>An Individual Retirement Account (IRA) is a savings plan that an individual can open. </p>
@@ -79,6 +130,8 @@
         <li>Withdrawals before age 59.5 incur a 10% penalty. Contributions can be withdrawn any time without penalty</li>
       </ul>
     </div>
-    <script src="js/script.js"></script>
+
+    <footer>&copy; Copyright 2022 by Van Ha</footer>
+
   </body>
 </html>

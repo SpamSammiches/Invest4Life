@@ -4,17 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/bootstrap.bundle.js" defer></script>
     <title>Factor Investing</title>
   </head>
   <body>
-    <nav id="topnav">
-      <a href="index.html">Home</a>
-      <a href="retirement.html">Retirement Accounts</a>
-      <a href="activepassive.html">Active vs Passive</a>
-      <a href="compounding.html">Compounding</a>
-      <a href="portfolios.html">Portfolios</a>
-      <a href="calculator.html">Calculator</a>
+    <nav class="navbar navbar-expand-xl bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logo.png"
+            alt="Invest4Life logo"
+            width="75"
+            height="75"
+            class="d-inline-block align-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="retirement.html">Retirement Accounts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="compounding.html">Compound Growth</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="activepassive.html"
+                >Active vs Passive Investing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="factors.html">Factor Investing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolios.html">Portfoloios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="calculator.html">Calculators</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <div>
       <h1>What is Factor Investing?</h1>
@@ -61,15 +108,31 @@
         that indicated that size and value explained a statistically significant
         portion of market returns. Along with size and value, Fama and French
         used excess market returns due to market risk as the third factor.
+        According to Fama and French, there is a premium associated with smaller
+        size companies and more value oriented companies.
       </p>
+      <h2>Small Cap Value vs S & P 500</h2>
+
       <p>
-        There are indices based around these factors such as the Russell 2000
-        Value index. According to data from Dimensional Fund Advisors , small
-        cap value has outperformed the S&P 500 in every 20-year period from
-        1930-2019. So why not put everything into small cap value? Although
-        small cap value has historically outperformed, there have been long
-        periods where it has underperformed by almost 20 years based on the
-        chart below.
+        According to data from Dimensional Fund Advisors , small cap value has
+        outperformed the S&P 500 in every 20-year period from 1930-2019.
+        <figure>
+          <img
+            src="images/annualReturns.png"
+            alt="annualized nominal returns"
+          />
+          <figcaption>
+            Source:
+            <a
+              href="https://paulmerriman.com/wp-content/uploads/2021/01/2020-Year-End-Podcast-Charts.pdf"
+              >Paul Merriman</a
+            >
+          </figcaption>
+        </figure>
+
+        So why not put everything into small cap value? Although small cap value
+        has historically outperformed, there have been long periods where it has
+        underperformed by almost 20 years.
       </p>
       <figure>
         <img src="images/smallCapChart.png" alt="small cap chart" />
@@ -82,5 +145,6 @@
         </figcaption>
       </figure>
     </div>
+    <footer>&copy; Copyright 2022 by Van Ha</footer>
   </body>
 </html>
