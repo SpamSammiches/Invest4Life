@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/bootstrap.bundle.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <title>Retirement Calculators</title>
+  </head>
+  <body>
+    <nav id="topnav">
+      <a href="index.html">Home</a>
+      <a href="retirement.html">Retirement Accounts</a>
+      <a href="activepassive.html">Active vs Passive</a>
+      <a href="compounding.html">Compounding</a>
+      <a href="portfolios.html">Portfolios</a>
+      <a href="calculator.html">Calculator</a>
+    </nav>
+    <div id="div-form" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <form id="calc-form">
+            <fieldset>
+              <legend>Value At Retirement</legend>
+              <label for="rate">Interest Rate (%)</label>
+              <input type="number" name="rate" id="rate" required />
+              <br />
+              <label for="years">Years to Retirement</label>
+              <input type="number" name="years" id="years" required />
+              <br />
+              <label for="pv">Beginning Balance</label>
+              <input type="number" name="pv" id="pv" required />
+              <br />
+              <label for="contribution"> Annual Contribution</label>
+              <input
+                type="number"
+                name="contribution"
+                id="contribution"
+                required
+              />
+              <br />
+              <button type="submit" onclick="return calcFV();">Submit</button>
+              <button
+                type="reset"
+                onclick="window.location.reload(); return false;"
+              >
+                Reset
+              </button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="carousel-item">
+          <h1>2</h1>
+        </div>
+        <div class="carousel-item">
+          <h1>3</h1>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#div-form"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#div-form"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- <div id="div-form">
+      <form id="calc-form">
+        <fieldset>
+          <legend>Value At Retirement</legend>
+          <label for="rate">Interest Rate (%)</label>
+          <input type="number" name="rate" id="rate" required />
+          <br />
+          <label for="years">Years to Retirement</label>
+          <input type="number" name="years" id="years" required />
+          <br />
+          <label for="pv">Beginning Balance</label>
+          <input type="number" name="pv" id="pv" required />
+          <br />
+          <label for="contribution"> Annual Contribution</label>
+          <input type="number" name="contribution" id="contribution" required />
+          <br />
+          <button type="submit" onclick="return calcFV();">Submit</button>
+          <button
+            type="reset"
+            onclick="window.location.reload(); return false;"
+          >
+            Reset
+          </button>
+        </fieldset>
+      </form>
+    </div> -->
+    <div>
+      <p id="form-result"></p>
+    </div>
+  </body>
+</html>
