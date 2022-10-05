@@ -12,15 +12,12 @@ html, body {
  .navbar {
     position: fixed;
     height: 100px;
-    width: calc(100vw);
+    width: 100vw;
     top: 0;
     font-size: 0.9em;
 } 
 
-footer {
-    margin-left: 10px;
-    margin-top: 20px;
-}
+
 
 a {
     color:  blue;
@@ -37,8 +34,9 @@ a:visited {
 
 
 div {
-    width: 90%;
+    width: 100%;
     margin: auto;
+    padding-bottom: 1rem;
 }
 
 
@@ -65,20 +63,20 @@ div {
 }
 
 .center {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
 
 figcaption {
-    text-align: left;
+    text-align: center;
     font-weight: 1000;
 }
 
 .compound-table {
     width: 60%;
     table-layout: fixed;
-    margin: auto;
+    margin: 20px auto;
     border: 2px solid green;
 }
 
@@ -97,6 +95,8 @@ caption {
     font-weight: 1000;
     border: solid 2px green;
     background-color:  #85BB65;
+    caption-side: top;
+    text-align: center;
 }
 
 #fv-form, #co-form {
@@ -141,4 +141,16 @@ input[type=number]#result {
 
 .hidden {
     display: none;
+}
+
+.page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    height: 1rem;
+    bottom: 0;
+    width: 100%;
 }
