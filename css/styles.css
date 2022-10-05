@@ -97,6 +97,8 @@ caption {
     font-weight: 1000;
     border: solid 2px green;
     background-color:  #85BB65;
+    caption-side: top;
+    text-align: center;
 }
 
 #fv-form, #co-form {
