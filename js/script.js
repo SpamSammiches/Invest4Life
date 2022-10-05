@@ -1,7 +1,28 @@
+'use strict';
+
+// Validates required form fields are not empty
+function validateForm(field) {
+    var list = ["rate", "years", "pv", "fv", "contribution"];
+    var prefix = field.slice(0, 3);
+    var suffix = field.slice(3);
+
+    for (let i = 0; i < list.length; i++) {
+        if (list[i] !== suffix) {
+            var val = document.getElementById(prefix + list[i]).value;
+            if (val === null || val === "") {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
+
 // Calculates ending balance
 function calcFV() {
     if (!validateForm("fv-fv")) {
-        alert("Fill in all required fields.")
+        alert("Fill in all required fields.");
         return false;
     } 
  
@@ -19,7 +40,7 @@ function calcFV() {
 // calculates contribution amount
 function calcContri() {
     if (!validateForm("co-contribution")) {
-        alert("Fill in all required fields.")
+        alert("Fill in all required fields.");
         return false;
     } 
 
@@ -34,23 +55,6 @@ function calcContri() {
     return false;
 }
 
-// Validates required form fields are not empty
-function validateForm(field) {
-    var list = ["rate", "years", "pv", "fv", "contribution"];
-    var prefix = field.slice(0,3);
-    var suffix = field.slice(3);
-
-    for (let i = 0; i < list.length; i++) {
-        if (list[i] !== suffix) {
-            var val = document.getElementById(prefix + list[i]).value;
-            if (val === null || val === "") {
-                return false;
-            }
-        }
-    }
-
-    return true;
-}
 
 // Resets form and associated not required field
 function resetForm(formName, formField) {

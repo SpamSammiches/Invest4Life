@@ -17,8 +17,6 @@ html, body {
     font-size: 0.9em;
 } 
 
-
-
 a {
     color:  blue;
     text-decoration: none;
@@ -32,13 +30,11 @@ a:visited {
     color: purple;
 }
 
-
 div {
     width: 100%;
     margin: auto;
     padding-bottom: 1rem;
 }
-
 
 .float-right {
     float: right;
@@ -72,8 +68,11 @@ div {
 }
 
 figcaption {
-    text-align: center;
     font-weight: 1000;
+}
+
+.fig-c {
+    text-align: center;
 }
 
 .compound-table {
@@ -108,13 +107,6 @@ caption {
     text-align: center;
 }
 
-#form-result {
-    color:  #85BB65;
-    width: 30%;
-    text-align: center;
-    margin: auto;
-}
-
 legend {
     font-weight: 1000;
     font-size: 2em;
@@ -127,10 +119,6 @@ label {
 
 input[type=button] {
     width: 20em;
-}
-
-input[type=number]#result {
-    background-color: #85BB65;
 }
 
 .carousel-control-next, .carousel-control-prev{
