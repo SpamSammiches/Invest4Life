@@ -10,62 +10,177 @@
     <title>Portfolios</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-xl bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="images/logo.png"
-            alt="Invest4Life logo"
-            width="75"
-            height="75"
-            class="d-inline-block align-top"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="retirement.html">Retirement Accounts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="compounding.html">Compound Growth</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="activepassive.html"
-                >Active vs Passive Investing</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="factors.html">Factor Investing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolios.html">Portfoloios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="calculator.html">Calculators</a>
-            </li>
-          </ul>
+    <div class="page-container">
+      <nav class="navbar navbar-expand-xl bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/logo.png"
+              alt="Invest4Life logo"
+              width="75"
+              height="75"
+              class="d-inline-block align-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="retirement.html"
+                  >Retirement Accounts</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="compounding.html">Compound Growth</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="activepassive.html"
+                  >Active vs Passive Investing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="factors.html">Factor Investing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolios.html">Portfoloios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="calculator.html">Calculators</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <div class="center">
+        <h1>Why Buy and Hold?</h1>
+        <p>
+          Peter Lynch, the legendary manager of Fidelity's Magellan fund,
+          returned 29% annually during his tenure but the
+          <a
+            href="https://www.forbes.com/sites/forbesfinancecouncil/2021/06/02/how-investors-are-costing-themselves-money/?sh=5af951815e30"
+          >
+            average investor lost money in his fund </a
+          >. Why does this happen? People jump in and out of funds trying
+          different strategy to beat the market. People also chase performance.
+          They sell out of a fund and buy into a fund that had a year of great
+          returns. However, those great performing funds generally will revert
+          to the mean and underperform. You want to "buy low and sell high" but
+          performance chasing often is a "buy high and sell low" strategy. Buy
+          and Hold portfolios are the easiest to implement, follow, and leads to
+          greater returns. These portfolios use index funds as data shows, they
+          beat their actively managed counterparts. The following sample
+          portfolios are buy and hold portfolios that should be rebalanced
+          annually to the desired asset allocation.
+        </p>
+        <h2 class="center">Portfolios</h2>
+        <table class="compound-table">
+          <caption>
+            Boglehead 3-Fund Portfolio
+          </caption>
+          <tr>
+            <td>Asset</td>
+            <td>Percentage</td>
+            <td>Historical Performance (1980 - 2022)</td>
+          </tr>
+          <tr>
+            <td>US Stocks</td>
+            <td>60%</td>
+            <td rowspan="3">8.41%</td>
+          </tr>
+          <tr>
+            <td>International Stocks</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>US Bonds</td>
+            <td>20%</td>
+          </tr>
+        </table>
+
+        <table class="compound-table">
+          <caption>
+            Warren Buffet Portfolio
+          </caption>
+          <tr>
+            <td>Asset</td>
+            <td>Percentage</td>
+            <td>Historical Performance (1980 - 2022)</td>
+          </tr>
+          <tr>
+            <td>S & P 500</td>
+            <td>90%</td>
+            <td rowspan="2">10.76%</td>
+          </tr>
+          <tr>
+            <td>Short-term US Bonds</td>
+            <td>10%</td>
+          </tr>
+        </table>
+
+        <table class="compound-table">
+          <caption>
+            50/50 S & P 500 and Small Cap Value Portfolio
+          </caption>
+          <tr>
+            <td>Asset</td>
+            <td>Percentage</td>
+            <td>Historical Performance (1980 - 2022)</td>
+          </tr>
+          <tr>
+            <td>S & P 500</td>
+            <td>50%</td>
+            <td rowspan="2">12.30%</td>
+          </tr>
+          <tr>
+            <td>US Small Cap Value</td>
+            <td>50%</td>
+          </tr>
+        </table>
+
+        <table class="compound-table">
+          <caption>
+            Paul Merriman 4-Fund Portfolio
+          </caption>
+          <tr>
+            <td>Asset</td>
+            <td>Percentage</td>
+            <td>Historical Performance (1980 - 2022)</td>
+          </tr>
+          <tr>
+            <td>S & P 500</td>
+            <td>25%</td>
+            <td rowspan="4">11.84%</td>
+          </tr>
+          <tr>
+            <td>Large Cap Value</td>
+            <td>25%</td>
+          </tr>
+          <tr>
+            <td>Small Cap Blend</td>
+            <td>25%</td>
+          </tr>
+          <tr>
+            <td>Small Cap Value</td>
+            <td>25%</td>
+          </tr>
+        </table>
       </div>
-    </nav>
-
-    <h1 class="center">Sample Portfolios</h1>
-
-    <footer>&copy; Copyright 2022 by Van Ha</footer>
+      <footer>&copy; Copyright 2022 by Van Ha</footer>
+    </div>
   </body>
 </html>
